@@ -16,7 +16,7 @@ import android.widget.Button;
  */
 public class homeFragment extends Fragment {
 
-    Button paylas;
+    Button paylas,getir;
     public homeFragment() {
         // Required empty public constructor
     }
@@ -40,6 +40,19 @@ public class homeFragment extends Fragment {
             public void onClick(View view) {
 
                 Intent paylasintent=new Intent(getActivity(),paylasim.class);
+                startActivity(paylasintent);
+
+
+            }
+        });
+
+
+        getir= getActivity().findViewById(R.id.button3);
+        getir.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent paylasintent=new Intent(getActivity(),liste.class);
                 startActivity(paylasintent);
 
 
