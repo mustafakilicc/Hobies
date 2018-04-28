@@ -1,7 +1,5 @@
 package com.example.bookolik.hobies;
 
-import android.content.Intent;
-import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import java.util.ArrayList;
 import java.util.List;
@@ -12,16 +10,15 @@ import android.content.Context;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.view.View;
-import android.webkit.WebView;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.ProgressBar;
 import android.widget.Toast;
-public class liste extends AppCompatActivity {
+public class liste_eglence extends AppCompatActivity {
 
     ListView SubjectListView;
     ProgressBar progressBarSubject;
-    String ServerURL = "http://echooffuture.com/Subjects.php";
+    String ServerURL = "http://echooffuture.com/Subjects_eglence.php";
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -34,7 +31,7 @@ public class liste extends AppCompatActivity {
 
         progressBarSubject = (ProgressBar)findViewById(R.id.progressBar);
 
-        new GetHttpResponse(liste.this).execute();
+        new GetHttpResponse(liste_eglence.this).execute();
     }
 
     private class GetHttpResponse extends AsyncTask<Void, Void, Void>
@@ -159,13 +156,6 @@ public class liste extends AppCompatActivity {
                         }
                         Toast.makeText(getApplicationContext(),eleman, Toast.LENGTH_LONG).show();
 
-                    /*    Intent intent =new Intent(Intent.ACTION_VIEW);
-                        intent.setData(Uri.parse("www.google.com"));
-                        startActivity(intent);*/
-
-                        WebView webview = (WebView) findViewById(R.id.webview);
-                        webview.getSettings().setJavaScriptEnabled(true);
-                        webview.loadUrl("https://gelecegiyazanlar.turkcell.com.tr");
 
                     }
                 });

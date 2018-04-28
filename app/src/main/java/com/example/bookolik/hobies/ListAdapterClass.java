@@ -60,7 +60,7 @@ public class ListAdapterClass extends BaseAdapter {
             viewItem = (ViewItem) convertView.getTag();
         }
 
-        viewItem.TextViewSubjectName.setText(valueList.get(position).id+" "+valueList.get(position).isim );
+        viewItem.TextViewSubjectName.setText(valueList.get(position).id+" "+valueList.get(position).aciklama );
 
         return convertView;
     }

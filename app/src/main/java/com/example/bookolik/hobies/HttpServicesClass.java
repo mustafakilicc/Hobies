@@ -117,9 +117,9 @@ public class HttpServicesClass {
 
         if(!ArrayListParams.isEmpty())
         {
-            httpPost.setEntity(new UrlEncodedFormEntity(ArrayListParams, HTTP.UTF_8));
+            httpPost.setEntity(new UrlEncodedFormEntity(ArrayListParams,HTTP.UTF_8));
         }
-
+        //HTTP.UTF_8
         executeRequest(httpPost, UrlHolder);
     }
 

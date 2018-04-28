@@ -4,6 +4,8 @@ package com.example.bookolik.hobies;
 public class subjects {
 
     public String id ;
-    public String isim ;
+    public String aciklama ;
+    public String link ;
+
 
 }

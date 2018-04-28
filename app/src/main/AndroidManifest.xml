@@ -13,9 +13,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-
-
         <activity
             android:name=".MainActivity"
             android:label="@string/app_name">
@@ -26,7 +23,6 @@
             </intent-filter>
         </activity>
 
-
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
@@ -35,9 +31,6 @@
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name" />
-
-
-
         <activity
             android:name="com.facebook.CustomTabActivity"
             android:exported="true">
@@ -50,9 +43,6 @@
                 <data android:scheme="@string/fb_login_protocol_scheme" />
             </intent-filter>
         </activity>
-
-
-
         <activity
             android:name=".giris"
             android:theme="@style/full">
@@ -63,8 +53,6 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-
-
         <activity
             android:name=".acilis"
             android:theme="@style/full">
@@ -74,26 +62,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity android:name=".paylasim" />
-
-
-
         <activity android:name=".liste">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
-
         </activity>
-
-
-
-
-
-
+        <activity android:name=".liste_teknoloji" />
+        <activity android:name=".liste_bilim" />
+        <activity android:name=".liste_eglence" />
+        <activity android:name=".liste_haber" />
+        <activity android:name=".liste_kultur" />
+        <activity android:name=".liste_sanat" />
+        <activity android:name=".liste_dizi_film" />
+        <activity android:name=".goruntuleme"></activity>
     </application>
 
 </manifest>

@@ -16,7 +16,7 @@ import android.widget.Button;
  */
 public class homeFragment extends Fragment {
 
-    Button paylas,getir;
+    Button paylas,getir,teknoloji,film,bilim,eglence,kultur,sanat,haber,goruntule;
     public homeFragment() {
         // Required empty public constructor
     }
@@ -53,6 +53,105 @@ public class homeFragment extends Fragment {
             public void onClick(View view) {
 
                 Intent paylasintent=new Intent(getActivity(),liste.class);
+                startActivity(paylasintent);
+
+
+            }
+        });
+
+
+
+        teknoloji= getActivity().findViewById(R.id.button4);
+        teknoloji.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent paylasintent=new Intent(getActivity(),liste_teknoloji.class);
+                startActivity(paylasintent);
+
+
+            }
+        });
+
+
+        film= getActivity().findViewById(R.id.button5);
+        film.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent paylasintent=new Intent(getActivity(),liste_dizi_film.class);
+                startActivity(paylasintent);
+
+
+            }
+        });
+
+        bilim= getActivity().findViewById(R.id.button6);
+        bilim.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent paylasintent=new Intent(getActivity(),liste_bilim.class);
+                startActivity(paylasintent);
+
+
+            }
+        });
+
+        eglence= getActivity().findViewById(R.id.button7);
+        eglence.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent paylasintent=new Intent(getActivity(),liste_eglence.class);
+                startActivity(paylasintent);
+
+
+            }
+        });
+
+        kultur= getActivity().findViewById(R.id.button8);
+        kultur.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent paylasintent=new Intent(getActivity(),liste_kultur.class);
+                startActivity(paylasintent);
+
+
+            }
+        });
+
+        sanat= getActivity().findViewById(R.id.button9);
+        sanat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent paylasintent=new Intent(getActivity(),liste_sanat.class);
+                startActivity(paylasintent);
+
+
+            }
+        });
+
+        haber= getActivity().findViewById(R.id.button10);
+        haber.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent paylasintent=new Intent(getActivity(),liste_haber.class);
+                startActivity(paylasintent);
+
+
+            }
+        });
+
+        goruntule= getActivity().findViewById(R.id.button12);
+        goruntule.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                Intent paylasintent=new Intent(getActivity(),goruntuleme.class);
                 startActivity(paylasintent);
 
 
