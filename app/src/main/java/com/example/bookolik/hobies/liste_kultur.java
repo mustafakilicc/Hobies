@@ -1,5 +1,6 @@
 package com.example.bookolik.hobies;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import java.util.ArrayList;
 import java.util.List;
@@ -156,6 +157,10 @@ public class liste_kultur extends AppCompatActivity {
                         }
                         Toast.makeText(getApplicationContext(),eleman, Toast.LENGTH_LONG).show();
 
+                        Intent intent = new Intent(getApplicationContext(),goruntuleme.class);
+
+                        intent.putExtra("anahtar", eleman);
+                        startActivity(intent);
 
                     }
                 });

@@ -159,13 +159,23 @@ public class liste extends AppCompatActivity {
                         }
                         Toast.makeText(getApplicationContext(),eleman, Toast.LENGTH_LONG).show();
 
+
+                        Intent intent = new Intent(getApplicationContext(),goruntuleme.class);
+
+                        intent.putExtra("anahtar", eleman);
+                        startActivity(intent);
+
+
+
+
+
                     /*    Intent intent =new Intent(Intent.ACTION_VIEW);
                         intent.setData(Uri.parse("www.google.com"));
                         startActivity(intent);*/
 
-                        WebView webview = (WebView) findViewById(R.id.webview);
-                        webview.getSettings().setJavaScriptEnabled(true);
-                        webview.loadUrl("https://gelecegiyazanlar.turkcell.com.tr");
+//                        WebView webview = (WebView) findViewById(R.id.webview);
+//                        webview.getSettings().setJavaScriptEnabled(true);
+//                        webview.loadUrl("https://gelecegiyazanlar.turkcell.com.tr");
 
                     }
                 });
@@ -173,6 +183,15 @@ public class liste extends AppCompatActivity {
 
 
             }
+        }
+
+
+        public void aktar(String link){
+
+
+            Intent paylasintent = new Intent(getApplicationContext(),goruntuleme.class);
+            startActivity(paylasintent);
+
         }
     }
 

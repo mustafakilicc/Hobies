@@ -30,7 +30,7 @@ public class paylasim extends AppCompatActivity {
     Button button;
     Spinner sp;
     String TempName, TempEmail,Tempktgr ;
-    final   String[] dizi={"Teknoloji","Bilim","Eğlenece","Haber","Kültür","Sanat","Dizi-Film"};
+    final   String[] dizi={"Teknoloji","Bilim","Eğlence","Haber","Kültür","Sanat","Dizi-Film"};
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
