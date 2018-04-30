@@ -13,61 +13,107 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical" >
+            android:orientation="vertical">
 
-                <Button
-                    android:id="@+id/paylas"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Sen de Link Paylaş" />
+            <Button
+                android:id="@+id/paylas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sen de Link Paylaş" />
 
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Genel" />
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:paddingLeft="42dp"
+                android:paddingTop="10dp">
 
-                <Button
-                    android:id="@+id/button4"
+                <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Teknoloji" />
+                    android:layout_height="50dp">
 
-                <Button
-                    android:id="@+id/button5"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Dizi - Film" />
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="1"
+                        android:text="Genel" />
 
-                <Button
-                    android:id="@+id/button6"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Bilim" />
+                    <Button
+                        android:id="@+id/button10"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
 
-                <Button
-                    android:id="@+id/button7"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Eğlence" />
+                        android:background="@drawable/haber" />
+                </TableRow>
 
-                <Button
-                    android:id="@+id/button8"
+                <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Kültür" />
+                    android:layout_height="match_parent">
 
-                <Button
-                    android:id="@+id/button9"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Sanat" />
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
 
-                <Button
-                    android:id="@+id/button10"
+                        android:background="@drawable/teknoloji" />
+
+                    <Button
+                        android:id="@+id/button6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:width="100dp"
+                        android:background="@drawable/science"
+
+                        android:padding="15dp" />
+                </TableRow>
+
+                <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Haber" />
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/button8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/kultur" />
+
+                    <Button
+                        android:id="@+id/button9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/sanat" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/button5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/dizifilm" />
+
+                    <Button
+                        android:id="@+id/button7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:background="@drawable/eglence" />
+                </TableRow>
+
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+
+                </TableRow>
+            </TableLayout>
 
             <Button
                 android:id="@+id/button12"
