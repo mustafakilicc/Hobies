@@ -92,6 +92,14 @@ public class giris extends AppCompatActivity {
             }
         });
         */
+
+
+
+
+
+
+
+
     }
 
     @Override
@@ -110,6 +118,12 @@ public class giris extends AppCompatActivity {
     private void updateUI() {
 
         Toast.makeText(giris.this,"Giriş Yapıldı.",Toast.LENGTH_LONG);
+
+
+
+
+
+
 
         Intent girisintent=new Intent(giris.this,MainActivity.class);
         startActivity(girisintent);

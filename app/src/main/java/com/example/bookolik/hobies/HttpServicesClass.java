@@ -143,11 +143,38 @@ public class HttpServicesClass {
             HttpEntity entity = httpResponse.getEntity();
             if (entity != null)
             {
+
+
                 InputStream inputStream = entity.getContent();
 
                 response = convertStreamToString(inputStream);
 
                 inputStream.close();
+
+
+
+
+
+      /*          doInBackground(String... params) { HttpURLConnection connection = null;
+                BufferedReader br = null; try { URL url = new URL(params[0]);
+                    connection = (HttpURLConnection) url.openConnection();
+                    connection.connect();
+                    InputStream is = connection.getInputStream();
+                    br = new BufferedReader(new InputStreamReader(is, "windows-1254"));
+                    String satir; String satirlar = "";
+                     while ((satir = br.readLine()) != null) { Log.d("satir:", satir);
+                    satirlar += satir;
+                    } return satirlar; } catch (Exception e) { } return "hata";
+                     } protected void onPostExecute(String s){ Log.d("postexecutedangelen", s);
+                    try { JSONObject jo = new JSONObject(s);
+                textView2.setText(jo.getString("tarih")); } }  br = new BufferedReader(new InputStreamReader(is, "windows-1254"));
+
+
+
+                */
+
+
+
             }
         }
         catch (ClientProtocolException e)

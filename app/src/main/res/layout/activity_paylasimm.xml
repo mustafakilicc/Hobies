@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".paylasim">
-
-
+    tools:context=".paylasimm">
 
 
 
@@ -22,8 +19,7 @@
             android:layout_height="wrap_content"
             android:ems="10"
             android:inputType="textPersonName"
-            android:text="Açıklama"
-            />
+            android:text="Açıklamaa" />
 
         <EditText
             android:id="@+id/link"
@@ -45,8 +41,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/buttonshape"
-            android:text="Paylaş"
+            android:text="Paylaşş"
             android:textColor="#FFFFFF"
             android:textSize="24sp" />
     </LinearLayout>
+
+
+
+
 </android.support.constraint.ConstraintLayout>

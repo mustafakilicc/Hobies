@@ -77,7 +77,7 @@
         <activity android:name=".liste_kultur" />
         <activity android:name=".liste_sanat" />
         <activity android:name=".liste_dizi_film" />
-        <activity android:name=".goruntuleme"></activity>
+        <activity android:name=".goruntuleme" />
     </application>
 
 </manifest>

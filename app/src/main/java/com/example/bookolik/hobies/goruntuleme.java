@@ -65,7 +65,7 @@ public class goruntuleme extends AppCompatActivity {
 
                 Toast.makeText(goruntuleme.this,"Sayfa Yüklendi",Toast.LENGTH_SHORT).show();
                 progressDialog.dismiss();
-            }
+            }""
 
             @Override
             public void onReceivedClientCertRequest(WebView view, ClientCertRequest request) {

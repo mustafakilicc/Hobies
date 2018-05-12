@@ -13,50 +13,75 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
             android:orientation="vertical">
 
-            <Button
-                android:id="@+id/paylas"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Sen de Link Paylaş" />
+
 
             <TableLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:layout_height="match_parent"
                 android:paddingBottom="10dp"
-                android:paddingLeft="42dp"
+                android:paddingLeft="0dp"
                 android:paddingTop="10dp">
+
+
+                <Button
+                    android:id="@+id/paylas"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/buttonshape"
+
+                    android:text="Link Paylaş"
+                    android:textColor="@android:color/background_light"
+                    android:textSize="20dp" />
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="50dp">
-
-                    <Button
-                        android:id="@+id/button3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:hint="1"
-                        android:text="Genel" />
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp">
 
                     <Button
                         android:id="@+id/button10"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
 
-                        android:background="@drawable/haber" />
+
+                        android:background="@drawable/haberr" />
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="    " />
+
+                    <Button
+                        android:id="@+id/button3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/haber"
+
+                        />
+
                 </TableRow>
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp">
 
                     <Button
                         android:id="@+id/button4"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
 
                         android:background="@drawable/teknoloji" />
+
+                    <TextView
+                        android:id="@+id/textView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="    " />
 
                     <Button
                         android:id="@+id/button6"
@@ -66,11 +91,13 @@
                         android:background="@drawable/science"
 
                         android:padding="15dp" />
+
                 </TableRow>
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp">
 
                     <Button
                         android:id="@+id/button8"
@@ -79,17 +106,25 @@
 
                         android:background="@drawable/kultur" />
 
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="20dp"
+                        android:layout_height="0dp"
+                        android:text="    " />
+
                     <Button
                         android:id="@+id/button9"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
 
-                        android:background="@drawable/sanat" />
+                        android:background="@drawable/sanat"
+                        android:paddingLeft="5dp" />
                 </TableRow>
 
                 <TableRow
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:paddingTop="10dp">
 
                     <Button
                         android:id="@+id/button5"
@@ -97,6 +132,12 @@
                         android:layout_height="wrap_content"
 
                         android:background="@drawable/dizifilm" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="    " />
 
                     <Button
                         android:id="@+id/button7"
@@ -107,19 +148,7 @@
                 </TableRow>
 
 
-                <TableRow
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-
-                </TableRow>
             </TableLayout>
-
-            <Button
-                android:id="@+id/button12"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Button" />
 
         </LinearLayout>
 

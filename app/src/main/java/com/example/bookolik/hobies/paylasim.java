@@ -51,6 +51,7 @@ public class paylasim extends AppCompatActivity {
 
                 GetData();
                 Toast.makeText(paylasim.this, dizi[sp.getSelectedItemPosition()], Toast.LENGTH_LONG).show();
+
                 InsertData(TempName, TempEmail,Tempktgr);
 
             }

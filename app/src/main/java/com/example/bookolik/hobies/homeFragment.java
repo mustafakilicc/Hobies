@@ -16,7 +16,7 @@ import android.widget.Button;
  */
 public class homeFragment extends Fragment {
 
-    Button paylas,getir,teknoloji,film,bilim,eglence,kultur,sanat,haber,goruntule;
+    Button paylas,getir,teknoloji,film,bilim,eglence,kultur,sanat,haber;
     public homeFragment() {
         // Required empty public constructor
     }
@@ -146,17 +146,7 @@ public class homeFragment extends Fragment {
             }
         });
 
-        goruntule= getActivity().findViewById(R.id.button12);
-        goruntule.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
 
-                Intent paylasintent=new Intent(getActivity(),goruntuleme.class);
-                startActivity(paylasintent);
-
-
-            }
-        });
 
 
 
